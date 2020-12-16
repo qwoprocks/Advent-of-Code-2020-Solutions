@@ -45,6 +45,7 @@ int main() {
     while (reader >> num) {
         nums.push_back(num);
     }
+    reader.close();
     cout << "Part 1: " << part1(nums) << endl;
     cout << "Part 2: " << part2(nums) << endl;
     return 0;
