@@ -47,6 +47,7 @@ int part2() {
         }
     }
     reader.close();
+    // Returns 0 if there is no answer found
     return 0;
 }
 
