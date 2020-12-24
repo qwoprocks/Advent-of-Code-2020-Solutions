@@ -1,4 +1,4 @@
-/* Link to problem: https://adventofcode.com/2020/day/8 */
+/* Link to problem: https://adventofcode.com/2020/day/9 */
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -34,7 +34,7 @@ long part1(vector<long> &numbers) {
     return 0;
 }
 
- long part2(vector<long> &numbers, long part1_ans) {
+long part2(vector<long> &numbers, long part1_ans) {
     unordered_map<long, size_t> hashmap;
     long running_sum = numbers[0];
     hashmap[running_sum] =  0;
@@ -65,7 +65,7 @@ int main() {
         numbers.push_back(stol(line));
     }
     reader.close();
-    int part1_ans = part1(numbers);
+    long part1_ans = part1(numbers);
     cout << "Part 1: " << part1_ans << endl;
     cout << "Part 2: " << part2(numbers, part1_ans) << endl;
     return 0;
