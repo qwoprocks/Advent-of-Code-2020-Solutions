@@ -17,7 +17,7 @@ int part1(vector<int> &sorted_adapters) {
 }
 
 long long part2(vector<int> &sorted_adapters) {
-    int max_joltage = sorted_adapters[sorted_adapters.size() - 1];
+    size_t max_joltage = sorted_adapters[sorted_adapters.size() - 1];
     long long dp[max_joltage + 1] = {-1};
     dp[0] = 1;
     for (size_t i = 1; i < sorted_adapters.size(); ++i) {
