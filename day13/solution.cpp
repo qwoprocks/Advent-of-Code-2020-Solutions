@@ -1,4 +1,4 @@
-/* Link to problem: https://adventofcode.com/2020/day/12 */
+/* Link to problem: https://adventofcode.com/2020/day/13 */
 #include <iostream>
 #include <fstream>
 #include <string>
