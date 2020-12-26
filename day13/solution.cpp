@@ -27,7 +27,7 @@ long long part2(vector<string> &bus_ids) {
     for (size_t i = 0; i < bus_ids.size(); ++i) {
         string id = bus_ids[i];
         if (all_of(id.begin(), id.end(), ::isdigit)) {
-            bus_ids_index_pair.push_back({i % stoi(id), stoi(id)});
+            bus_ids_index_pair.push_back({i, stoi(id)});
         }
     }
     // Sieve method
