@@ -52,6 +52,7 @@ int main() {
 
     // Read bus ids into a vector
     getline(reader, line);
+    reader.close();
     vector<string> bus_ids;
     size_t start_index = 0;
     size_t delim_index = line.find(",", start_index);

@@ -126,6 +126,7 @@ int main() {
     while (getline(reader, line)) {
         nearby_tickets.push_back(read_ticket(line));
     }
+    reader.close();
 
     cout << "Part 1: " << part1(ranges, nearby_tickets) << endl;
     cout << "Part 2: " << part2(ranges, nearby_tickets, my_ticket) << endl;

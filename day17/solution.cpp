@@ -21,6 +21,8 @@ int part1() {
         }
         ++k;
     }
+    reader.close();
+
     vector<vector<vector<bool>>> buffer_grid(size, vector<vector<bool>>(size, vector<bool>(size)));
     vector<int> offsets = {-1, 0, 1};
     for (int cycle = 0; cycle < 6; ++cycle) {
@@ -87,6 +89,8 @@ int part2() {
         }
         ++k;
     }
+    reader.close();
+
     vector<vector<vector<vector<bool>>>> buffer_grid(size, vector<vector<vector<bool>>>(size, vector<vector<bool>>(size, vector<bool>(size))));
     vector<int> offsets = {-1, 0, 1};
     for (int cycle = 0; cycle < 6; ++cycle) {

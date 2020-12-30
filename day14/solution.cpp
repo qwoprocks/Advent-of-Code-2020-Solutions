@@ -38,6 +38,7 @@ long long part1() {
         }
     }
     reader.close();
+
     long long result = 0;
     for (auto mem_entry : memory) {
         result += mem_entry.second;
@@ -93,6 +94,7 @@ long long part2() {
         }
     }
     reader.close();
+
     long long result = 0;
     for (auto mem_entry : memory) {
         result += mem_entry.second;

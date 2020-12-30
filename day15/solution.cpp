@@ -26,6 +26,8 @@ int main() {
     ifstream reader("input.txt");
     string line;
     getline(reader, line);
+    reader.close();
+
     vector<size_t> memory(30000001, 0);
     size_t number = 0;
     size_t i = 1;
